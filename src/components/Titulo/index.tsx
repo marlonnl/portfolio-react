@@ -1,13 +1,15 @@
 import React from "react"
+import { Titulo as TituloEstilo } from "./styles"
 
-type Props = {
+export type Props = {
 	children: string;
+	fontSize?: number;
 }
 
 const Titulo = (props: Props) => (
-	<span>
+	<TituloEstilo fontSize={props.fontSize}>
 		{props.children}
-	</span>
+	</TituloEstilo>
 )
 
 export default Titulo
